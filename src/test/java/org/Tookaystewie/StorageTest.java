@@ -1,4 +1,4 @@
-package org.Tookaystewie.logic;
+package org.Tookaystewie;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -6,9 +6,8 @@ import java.util.HashMap;
 import java.io.File;
 import java.util.Scanner;
 
-public class Storage {
-    public HashMap<Integer, Tasks> taskMap = new HashMap<Integer, Tasks>();
-
+public class StorageTest {
+    static HashMap<Integer, Tasks> taskMap = new HashMap<Integer, Tasks>();
 
 
     public void taskFileExists() {
@@ -36,7 +35,6 @@ public class Storage {
                 taskMap.put(temp.getId(),temp);
 
             }
-            //reached end of file
 
         } catch (FileNotFoundException e) {
             System.out.println("Error finding data file");

@@ -1,4 +1,4 @@
-package org.Tookaystewie.logic;
+package org.Tookaystewie;
 
 
 public class Tasks {
