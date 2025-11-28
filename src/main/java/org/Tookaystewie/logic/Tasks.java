@@ -41,6 +41,12 @@ public class Tasks {
     }
     public void setId(int id) {this.id = id;}
 
+    public void taskView(){
+        System.out.println("----------"+getName()+"----------"+"("+getId()+")");
+        System.out.println(getDescription());
+        System.out.println(getCompleted()  ? "COMPLETED" : "ACTIVE");
+    }
+    //deprecated, used for debugging
     @Override
     public String toString() {
         return "name: " + name + ", description: " + description + ", status: " + completed;
